@@ -6,6 +6,7 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 
 ## A faire :
 
+- [ ] Animation quand on ferme une form
 - [ ] Système mise à jour
 - [ ] Syutème de connexion (Auth.GG) - !!TEMPORAIRE POUR TEST!!
 - [ ] Rénitialisation logiciel
