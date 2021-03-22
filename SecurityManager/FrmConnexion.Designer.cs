@@ -39,10 +39,10 @@ namespace SecurityManager
             this.DragCtrl = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnConnexion = new Guna.UI.WinForms.GunaButton();
             this.TxtMotDePasse = new Siticone.UI.WinForms.SiticoneTextBox();
             this.TxtNomUtilisateur = new Siticone.UI.WinForms.SiticoneTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.BtnConnexion = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -129,29 +129,6 @@ namespace SecurityManager
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Connexion:";
             // 
-            // BtnConnexion
-            // 
-            this.BtnConnexion.AnimationHoverSpeed = 0.07F;
-            this.BtnConnexion.AnimationSpeed = 0.03F;
-            this.BtnConnexion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.BtnConnexion.BorderColor = System.Drawing.Color.Black;
-            this.BtnConnexion.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnConnexion.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnConnexion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnConnexion.ForeColor = System.Drawing.Color.White;
-            this.BtnConnexion.Image = ((System.Drawing.Image)(resources.GetObject("BtnConnexion.Image")));
-            this.BtnConnexion.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnConnexion.Location = new System.Drawing.Point(16, 101);
-            this.BtnConnexion.Name = "BtnConnexion";
-            this.BtnConnexion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.BtnConnexion.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnConnexion.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnConnexion.OnHoverImage = null;
-            this.BtnConnexion.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnConnexion.Size = new System.Drawing.Size(312, 31);
-            this.BtnConnexion.TabIndex = 18;
-            this.BtnConnexion.Text = "S\'authentifier";
-            // 
             // TxtMotDePasse
             // 
             this.TxtMotDePasse.Animated = false;
@@ -212,7 +189,31 @@ namespace SecurityManager
             this.gunaLabel2.TabIndex = 30;
             this.gunaLabel2.Text = "v.0.0.1";
             // 
-            // Connexion
+            // BtnConnexion
+            // 
+            this.BtnConnexion.AnimationHoverSpeed = 0.07F;
+            this.BtnConnexion.AnimationSpeed = 0.03F;
+            this.BtnConnexion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnConnexion.BorderColor = System.Drawing.Color.Black;
+            this.BtnConnexion.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnConnexion.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnConnexion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnConnexion.ForeColor = System.Drawing.Color.White;
+            this.BtnConnexion.Image = ((System.Drawing.Image)(resources.GetObject("BtnConnexion.Image")));
+            this.BtnConnexion.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnConnexion.Location = new System.Drawing.Point(16, 101);
+            this.BtnConnexion.Name = "BtnConnexion";
+            this.BtnConnexion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnConnexion.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnConnexion.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnConnexion.OnHoverImage = null;
+            this.BtnConnexion.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnConnexion.Size = new System.Drawing.Size(312, 31);
+            this.BtnConnexion.TabIndex = 18;
+            this.BtnConnexion.Text = "S\'authentifier";
+            this.BtnConnexion.Click += new System.EventHandler(this.BtnConnexion_Click);
+            // 
+            // FrmConnexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,7 +222,7 @@ namespace SecurityManager
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Connexion";
+            this.Name = "FrmConnexion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Security Manager (SM.0.0.1) - W.I.P";
             this.TopMost = true;

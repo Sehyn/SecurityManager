@@ -93,6 +93,7 @@ namespace SecurityManager
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
             this.BtnClose.Size = new System.Drawing.Size(45, 29);
             this.BtnClose.TabIndex = 3;
+          
             // 
             // gunaSeparator1
             // 

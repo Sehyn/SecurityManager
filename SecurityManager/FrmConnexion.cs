@@ -34,6 +34,13 @@ namespace SecurityManager
             
         }
 
-       
+        private void BtnConnexion_Click(object sender, EventArgs e)
+        {
+#if DEBUG
+            FrmUtilisateur FormUtilisateur = new FrmUtilisateur();
+            this.Hide();
+            FormUtilisateur.Show();
+#endif
+        }
     }
 }

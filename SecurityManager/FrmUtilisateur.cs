@@ -56,6 +56,10 @@ namespace SecurityManager
                 {
                     tw.WriteLine("[" + DateTime.Now + "] - Deconnexion de l'agent XXXX");
                 }
+                FrmConnexion FormConnexion = new FrmConnexion();
+                this.Hide();
+                FormConnexion.Show();
+                this.Close();
             }
             catch(DirectoryNotFoundException)
             {
