@@ -27,7 +27,8 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 - [x] Design Utilisateur
 - [x] Design Centre Aide
 - [x] Design Notification
-- [x] Système de catch exception
+- [x] Système de catch exception-
+- [x] Logger automatiquement une erreur dans un fichier texte avec DATE(dd/mm/yyy) + timestamp et exception ex.message
 - [x] Renommer chaque form, classe et designers items correctement 
 - [x] Utiliser les commentaires pragma pour les placeholders
 
