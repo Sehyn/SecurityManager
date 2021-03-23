@@ -19,6 +19,7 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 - [ ] Faire en sorte que quand on utilise l'Hotkey (CTRL + F3) au setup/start up du programme ça arrete l'opération en cours
 - [ ] Pouvoir envoyer des rapports directement par mail
 - [ ] Pouvoir utiliser autre chose que des .txt pour la main courante, etc.. (Idée PDF + design mais aucune idée de comment faire!)
+- [ ] Ne pas créer pleins de formes utiliser un tab/panel ou meme form en utilisant visible = false/true 🤔 
 
 
 ## Réalisé :
