@@ -37,24 +37,36 @@ namespace SecurityManager
             this.BtnClose = new Siticone.UI.WinForms.SiticoneControlBox();
             this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.siticoneGroupBox1 = new Siticone.UI.WinForms.SiticoneGroupBox();
+            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
+            this.BtnAccueil = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
+            this.BtnMainCourante = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.siticoneMaterialTextBox1 = new Siticone.UI.WinForms.SiticoneMaterialTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.Animation = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.BtnConnexion = new Guna.UI.WinForms.GunaButton();
-            this.BtnAide = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.BtnDeconnexion = new Guna.UI.WinForms.GunaButton();
+            this.Animation = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
+            this.PanelConsignes = new Siticone.UI.WinForms.SiticonePanel();
+            this.PanelMainCourante = new System.Windows.Forms.Panel();
+            this.BtnAjoutEvenement = new Guna.UI.WinForms.GunaButton();
+            this.TxtMainCouranteAjout = new Siticone.UI.WinForms.SiticoneTextBox();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TxtMainCourante = new System.Windows.Forms.TextBox();
+            this.LblUtilisateur = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.siticoneGroupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.PanelConsignes.SuspendLayout();
+            this.PanelMainCourante.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaPanel1
@@ -122,11 +134,11 @@ namespace SecurityManager
             this.siticoneGroupBox1.BorderRadius = 1;
             this.siticoneGroupBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.siticoneGroupBox1.Controls.Add(this.gunaButton4);
-            this.siticoneGroupBox1.Controls.Add(this.gunaButton7);
+            this.siticoneGroupBox1.Controls.Add(this.BtnAccueil);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton2);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton6);
-            this.siticoneGroupBox1.Controls.Add(this.BtnConnexion);
-            this.siticoneGroupBox1.Controls.Add(this.BtnAide);
+            this.siticoneGroupBox1.Controls.Add(this.BtnMainCourante);
+            this.siticoneGroupBox1.Controls.Add(this.gunaButton5);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton1);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton3);
             this.siticoneGroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -139,69 +151,6 @@ namespace SecurityManager
             this.siticoneGroupBox1.TabIndex = 26;
             this.siticoneGroupBox1.Text = "Security Manager (0.0.1)";
             this.siticoneGroupBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(249, 96);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(539, 242);
-            this.tabControl1.TabIndex = 27;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.siticoneMaterialTextBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(531, 216);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Consignes";
-            this.tabPage1.ToolTipText = "Consignes particulières, permanantes ou temporaires.";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // siticoneMaterialTextBox1
-            // 
-            this.siticoneMaterialTextBox1.Animated = false;
-            this.siticoneMaterialTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneMaterialTextBox1.DefaultText = resources.GetString("siticoneMaterialTextBox1.DefaultText");
-            this.siticoneMaterialTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.siticoneMaterialTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.siticoneMaterialTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneMaterialTextBox1.DisabledState.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.siticoneMaterialTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneMaterialTextBox1.FocusedState.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneMaterialTextBox1.HoveredState.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.Location = new System.Drawing.Point(6, 6);
-            this.siticoneMaterialTextBox1.Multiline = true;
-            this.siticoneMaterialTextBox1.Name = "siticoneMaterialTextBox1";
-            this.siticoneMaterialTextBox1.PasswordChar = '\0';
-            this.siticoneMaterialTextBox1.PlaceholderText = "";
-            this.siticoneMaterialTextBox1.ReadOnly = true;
-            this.siticoneMaterialTextBox1.SelectedText = "";
-            this.siticoneMaterialTextBox1.ShadowDecoration.Parent = this.siticoneMaterialTextBox1;
-            this.siticoneMaterialTextBox1.Size = new System.Drawing.Size(519, 221);
-            this.siticoneMaterialTextBox1.TabIndex = 0;
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(568, 81);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(232, 15);
-            this.gunaLabel2.TabIndex = 28;
-            this.gunaLabel2.Text = "Connecté en tant que: BERESLOW ARTHUR";
-            // 
-            // Animation
-            // 
-            this.Animation.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_BLEND;
-            this.Animation.Interval = 800;
-            this.Animation.TargetControl = this;
             // 
             // gunaButton4
             // 
@@ -226,28 +175,29 @@ namespace SecurityManager
             this.gunaButton4.TabIndex = 27;
             this.gunaButton4.Text = "Paramètres";
             // 
-            // gunaButton7
+            // BtnAccueil
             // 
-            this.gunaButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaButton7.AnimationSpeed = 0.03F;
-            this.gunaButton7.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton7.ForeColor = System.Drawing.Color.White;
-            this.gunaButton7.Image = global::SecurityManager.Properties.Resources.Accueil_28px;
-            this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton7.Location = new System.Drawing.Point(0, 41);
-            this.gunaButton7.Name = "gunaButton7";
-            this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton7.OnHoverImage = null;
-            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton7.Size = new System.Drawing.Size(229, 40);
-            this.gunaButton7.TabIndex = 26;
-            this.gunaButton7.Text = "Accueil";
+            this.BtnAccueil.AnimationHoverSpeed = 0.07F;
+            this.BtnAccueil.AnimationSpeed = 0.03F;
+            this.BtnAccueil.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnAccueil.BorderColor = System.Drawing.Color.Black;
+            this.BtnAccueil.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAccueil.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAccueil.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAccueil.ForeColor = System.Drawing.Color.White;
+            this.BtnAccueil.Image = global::SecurityManager.Properties.Resources.Accueil_28px;
+            this.BtnAccueil.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAccueil.Location = new System.Drawing.Point(0, 41);
+            this.BtnAccueil.Name = "BtnAccueil";
+            this.BtnAccueil.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnAccueil.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAccueil.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAccueil.OnHoverImage = null;
+            this.BtnAccueil.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAccueil.Size = new System.Drawing.Size(229, 40);
+            this.BtnAccueil.TabIndex = 26;
+            this.BtnAccueil.Text = "Accueil";
+            this.BtnAccueil.Click += new System.EventHandler(this.BtnAccueil_Click);
             // 
             // gunaButton2
             // 
@@ -295,52 +245,52 @@ namespace SecurityManager
             this.gunaButton6.TabIndex = 25;
             this.gunaButton6.Text = "Répertoire téléphonique";
             // 
-            // BtnConnexion
+            // BtnMainCourante
             // 
-            this.BtnConnexion.AnimationHoverSpeed = 0.07F;
-            this.BtnConnexion.AnimationSpeed = 0.03F;
-            this.BtnConnexion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.BtnConnexion.BorderColor = System.Drawing.Color.Black;
-            this.BtnConnexion.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnConnexion.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnConnexion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnConnexion.ForeColor = System.Drawing.Color.White;
-            this.BtnConnexion.Image = global::SecurityManager.Properties.Resources.Livre_blanc_28px;
-            this.BtnConnexion.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnConnexion.Location = new System.Drawing.Point(0, 80);
-            this.BtnConnexion.Name = "BtnConnexion";
-            this.BtnConnexion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.BtnConnexion.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnConnexion.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnConnexion.OnHoverImage = null;
-            this.BtnConnexion.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnConnexion.Size = new System.Drawing.Size(229, 40);
-            this.BtnConnexion.TabIndex = 19;
-            this.BtnConnexion.Text = "Main courante";
+            this.BtnMainCourante.AnimationHoverSpeed = 0.07F;
+            this.BtnMainCourante.AnimationSpeed = 0.03F;
+            this.BtnMainCourante.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnMainCourante.BorderColor = System.Drawing.Color.Black;
+            this.BtnMainCourante.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnMainCourante.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnMainCourante.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnMainCourante.ForeColor = System.Drawing.Color.White;
+            this.BtnMainCourante.Image = global::SecurityManager.Properties.Resources.Livre_blanc_28px;
+            this.BtnMainCourante.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnMainCourante.Location = new System.Drawing.Point(0, 80);
+            this.BtnMainCourante.Name = "BtnMainCourante";
+            this.BtnMainCourante.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnMainCourante.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnMainCourante.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnMainCourante.OnHoverImage = null;
+            this.BtnMainCourante.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnMainCourante.Size = new System.Drawing.Size(229, 40);
+            this.BtnMainCourante.TabIndex = 19;
+            this.BtnMainCourante.Text = "Main courante";
+            this.BtnMainCourante.Click += new System.EventHandler(this.BtnMainCourante_Click);
             // 
-            // BtnAide
+            // gunaButton5
             // 
-            this.BtnAide.AnimationHoverSpeed = 0.07F;
-            this.BtnAide.AnimationSpeed = 0.03F;
-            this.BtnAide.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.BtnAide.BorderColor = System.Drawing.Color.Black;
-            this.BtnAide.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.BtnAide.FocusedColor = System.Drawing.Color.Empty;
-            this.BtnAide.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnAide.ForeColor = System.Drawing.Color.White;
-            this.BtnAide.Image = global::SecurityManager.Properties.Resources.Info_v2_28px;
-            this.BtnAide.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnAide.Location = new System.Drawing.Point(0, 317);
-            this.BtnAide.Name = "BtnAide";
-            this.BtnAide.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.BtnAide.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.BtnAide.OnHoverForeColor = System.Drawing.Color.White;
-            this.BtnAide.OnHoverImage = null;
-            this.BtnAide.OnPressedColor = System.Drawing.Color.Black;
-            this.BtnAide.Size = new System.Drawing.Size(229, 40);
-            this.BtnAide.TabIndex = 24;
-            this.BtnAide.Text = "Aide";
-            this.BtnAide.Click += new System.EventHandler(this.BtnAide_Click);
+            this.gunaButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaButton5.AnimationSpeed = 0.03F;
+            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton5.ForeColor = System.Drawing.Color.White;
+            this.gunaButton5.Image = global::SecurityManager.Properties.Resources.Info_v2_28px;
+            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton5.Location = new System.Drawing.Point(0, 317);
+            this.gunaButton5.Name = "gunaButton5";
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton5.OnHoverImage = null;
+            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton5.Size = new System.Drawing.Size(229, 40);
+            this.gunaButton5.TabIndex = 24;
+            this.gunaButton5.Text = "Aide";
             // 
             // gunaButton1
             // 
@@ -388,6 +338,64 @@ namespace SecurityManager
             this.gunaButton3.TabIndex = 22;
             this.gunaButton3.Text = "Controle boutique";
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(9, 11);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(539, 242);
+            this.tabControl1.TabIndex = 27;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.siticoneMaterialTextBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(531, 216);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Consignes";
+            this.tabPage1.ToolTipText = "Consignes particulières, permanantes ou temporaires.";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // siticoneMaterialTextBox1
+            // 
+            this.siticoneMaterialTextBox1.Animated = false;
+            this.siticoneMaterialTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneMaterialTextBox1.DefaultText = resources.GetString("siticoneMaterialTextBox1.DefaultText");
+            this.siticoneMaterialTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.siticoneMaterialTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.siticoneMaterialTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneMaterialTextBox1.DisabledState.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.siticoneMaterialTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneMaterialTextBox1.FocusedState.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneMaterialTextBox1.HoveredState.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.Location = new System.Drawing.Point(6, 6);
+            this.siticoneMaterialTextBox1.Multiline = true;
+            this.siticoneMaterialTextBox1.Name = "siticoneMaterialTextBox1";
+            this.siticoneMaterialTextBox1.PasswordChar = '\0';
+            this.siticoneMaterialTextBox1.PlaceholderText = "";
+            this.siticoneMaterialTextBox1.ReadOnly = true;
+            this.siticoneMaterialTextBox1.SelectedText = "";
+            this.siticoneMaterialTextBox1.SelectionStart = 521;
+            this.siticoneMaterialTextBox1.ShadowDecoration.Parent = this.siticoneMaterialTextBox1;
+            this.siticoneMaterialTextBox1.Size = new System.Drawing.Size(519, 221);
+            this.siticoneMaterialTextBox1.TabIndex = 0;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(568, 81);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(127, 15);
+            this.gunaLabel2.TabIndex = 28;
+            this.gunaLabel2.Text = "Connecté en tant que: ";
+            // 
             // BtnDeconnexion
             // 
             this.BtnDeconnexion.AnimationHoverSpeed = 0.07F;
@@ -412,26 +420,157 @@ namespace SecurityManager
             this.BtnDeconnexion.Text = "Deconnexion";
             this.BtnDeconnexion.Click += new System.EventHandler(this.BtnDeconnexion_Click);
             // 
+            // Animation
+            // 
+            this.Animation.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_CENTER;
+            this.Animation.Interval = 100;
+            this.Animation.TargetControl = null;
+            // 
+            // PanelConsignes
+            // 
+            this.PanelConsignes.Controls.Add(this.tabControl1);
+            this.PanelConsignes.Location = new System.Drawing.Point(237, 96);
+            this.PanelConsignes.Name = "PanelConsignes";
+            this.PanelConsignes.ShadowDecoration.Parent = this.PanelConsignes;
+            this.PanelConsignes.Size = new System.Drawing.Size(551, 342);
+            this.PanelConsignes.TabIndex = 29;
+            // 
+            // PanelMainCourante
+            // 
+            this.PanelMainCourante.Controls.Add(this.BtnAjoutEvenement);
+            this.PanelMainCourante.Controls.Add(this.TxtMainCouranteAjout);
+            this.PanelMainCourante.Controls.Add(this.tabControl2);
+            this.PanelMainCourante.Location = new System.Drawing.Point(237, 99);
+            this.PanelMainCourante.Name = "PanelMainCourante";
+            this.PanelMainCourante.Size = new System.Drawing.Size(551, 352);
+            this.PanelMainCourante.TabIndex = 30;
+            this.PanelMainCourante.Visible = false;
+            // 
+            // BtnAjoutEvenement
+            // 
+            this.BtnAjoutEvenement.AnimationHoverSpeed = 0.07F;
+            this.BtnAjoutEvenement.AnimationSpeed = 0.03F;
+            this.BtnAjoutEvenement.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnAjoutEvenement.BorderColor = System.Drawing.Color.Black;
+            this.BtnAjoutEvenement.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAjoutEvenement.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAjoutEvenement.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAjoutEvenement.ForeColor = System.Drawing.Color.White;
+            this.BtnAjoutEvenement.Image = global::SecurityManager.Properties.Resources.Checkmark_28px;
+            this.BtnAjoutEvenement.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAjoutEvenement.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAjoutEvenement.Location = new System.Drawing.Point(6, 320);
+            this.BtnAjoutEvenement.Name = "BtnAjoutEvenement";
+            this.BtnAjoutEvenement.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnAjoutEvenement.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAjoutEvenement.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAjoutEvenement.OnHoverImage = null;
+            this.BtnAjoutEvenement.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAjoutEvenement.Size = new System.Drawing.Size(539, 27);
+            this.BtnAjoutEvenement.TabIndex = 39;
+            this.BtnAjoutEvenement.Text = "Ajouter l\'évenement";
+            this.BtnAjoutEvenement.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BtnAjoutEvenement.Click += new System.EventHandler(this.BtnAjoutEvenement_Click);
+            // 
+            // TxtMainCouranteAjout
+            // 
+            this.TxtMainCouranteAjout.AcceptsReturn = true;
+            this.TxtMainCouranteAjout.AcceptsTab = true;
+            this.TxtMainCouranteAjout.Animated = false;
+            this.TxtMainCouranteAjout.AutoScroll = true;
+            this.TxtMainCouranteAjout.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TxtMainCouranteAjout.DefaultText = "";
+            this.TxtMainCouranteAjout.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TxtMainCouranteAjout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TxtMainCouranteAjout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtMainCouranteAjout.DisabledState.Parent = this.TxtMainCouranteAjout;
+            this.TxtMainCouranteAjout.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TxtMainCouranteAjout.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtMainCouranteAjout.FocusedState.Parent = this.TxtMainCouranteAjout;
+            this.TxtMainCouranteAjout.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TxtMainCouranteAjout.HoveredState.Parent = this.TxtMainCouranteAjout;
+            this.TxtMainCouranteAjout.Location = new System.Drawing.Point(6, 238);
+            this.TxtMainCouranteAjout.Multiline = true;
+            this.TxtMainCouranteAjout.Name = "TxtMainCouranteAjout";
+            this.TxtMainCouranteAjout.PasswordChar = '\0';
+            this.TxtMainCouranteAjout.PlaceholderText = "";
+            this.TxtMainCouranteAjout.SelectedText = "";
+            this.TxtMainCouranteAjout.ShadowDecoration.Parent = this.TxtMainCouranteAjout;
+            this.TxtMainCouranteAjout.Size = new System.Drawing.Size(539, 78);
+            this.TxtMainCouranteAjout.TabIndex = 38;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Location = new System.Drawing.Point(6, 0);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(539, 242);
+            this.tabControl2.TabIndex = 37;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.TxtMainCourante);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(531, 216);
+            this.tabPage2.TabIndex = 0;
+            this.tabPage2.Text = "Main courante";
+            this.tabPage2.ToolTipText = "Consignes particulières, permanantes ou temporaires.";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // TxtMainCourante
+            // 
+            this.TxtMainCourante.AcceptsReturn = true;
+            this.TxtMainCourante.AcceptsTab = true;
+            this.TxtMainCourante.BackColor = System.Drawing.Color.White;
+            this.TxtMainCourante.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtMainCourante.Location = new System.Drawing.Point(6, 6);
+            this.TxtMainCourante.Multiline = true;
+            this.TxtMainCourante.Name = "TxtMainCourante";
+            this.TxtMainCourante.ReadOnly = true;
+            this.TxtMainCourante.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TxtMainCourante.Size = new System.Drawing.Size(519, 204);
+            this.TxtMainCourante.TabIndex = 0;
+            // 
+            // LblUtilisateur
+            // 
+            this.LblUtilisateur.AutoSize = true;
+            this.LblUtilisateur.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.LblUtilisateur.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.LblUtilisateur.Location = new System.Drawing.Point(688, 82);
+            this.LblUtilisateur.Name = "LblUtilisateur";
+            this.LblUtilisateur.Size = new System.Drawing.Size(112, 15);
+            this.LblUtilisateur.TabIndex = 31;
+            this.LblUtilisateur.Text = "BERESLOW ARTHUR";
+            // 
             // FrmUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.PanelMainCourante);
             this.Controls.Add(this.siticoneGroupBox1);
             this.Controls.Add(this.BtnDeconnexion);
             this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.PanelConsignes);
+            this.Controls.Add(this.LblUtilisateur);
+            this.Controls.Add(this.gunaLabel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUtilisateur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUtilisateur";
-            this.Load += new System.EventHandler(this.FrmUtilisateur_Load);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             this.siticoneGroupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.PanelConsignes.ResumeLayout(false);
+            this.PanelMainCourante.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,20 +583,28 @@ namespace SecurityManager
         private Siticone.UI.WinForms.SiticoneControlBox siticoneControlBox2;
         private Siticone.UI.WinForms.SiticoneControlBox BtnClose;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
-        private Guna.UI.WinForms.GunaButton BtnConnexion;
+        private Guna.UI.WinForms.GunaButton BtnMainCourante;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton BtnDeconnexion;
-        private Guna.UI.WinForms.GunaButton BtnAide;
+        private Guna.UI.WinForms.GunaButton gunaButton5;
         private Guna.UI.WinForms.GunaButton gunaButton6;
         private Siticone.UI.WinForms.SiticoneGroupBox siticoneGroupBox1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private Siticone.UI.WinForms.SiticoneMaterialTextBox siticoneMaterialTextBox1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaButton gunaButton7;
+        private Guna.UI.WinForms.GunaButton BtnAccueil;
         private Guna.UI.WinForms.GunaButton gunaButton4;
         public Guna.UI.WinForms.GunaAnimateWindow Animation;
+        private Siticone.UI.WinForms.SiticonePanel PanelConsignes;
+        private System.Windows.Forms.Panel PanelMainCourante;
+        private Guna.UI.WinForms.GunaButton BtnAjoutEvenement;
+        private Siticone.UI.WinForms.SiticoneTextBox TxtMainCouranteAjout;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TextBox TxtMainCourante;
+        private Guna.UI.WinForms.GunaLabel LblUtilisateur;
     }
 }

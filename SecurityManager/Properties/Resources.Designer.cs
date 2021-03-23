@@ -183,6 +183,16 @@ namespace SecurityManager.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap trash_2_24 {
+            get {
+                object obj = ResourceManager.GetObject("trash-2-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Warning_28px {
             get {
                 object obj = ResourceManager.GetObject("Warning_28px", resourceCulture);
