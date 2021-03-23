@@ -70,9 +70,9 @@ namespace SecurityManager
             }
             this.GunaLabel1.Text = msg;
 
-            //this.TopMost = false;
-            //this.ShowIcon = false;
-            //this.ShowInTaskbar = false;
+            this.TopMost = false;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
 
             this.Show();
             this.action = actionEnum.start;

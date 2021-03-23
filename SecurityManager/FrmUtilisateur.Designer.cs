@@ -42,8 +42,8 @@ namespace SecurityManager
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.BtnMainCourante = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.BtnAide = new Guna.UI.WinForms.GunaButton();
+            this.BtnPriseDeService = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -59,6 +59,9 @@ namespace SecurityManager
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.TxtMainCourante = new System.Windows.Forms.TextBox();
             this.LblUtilisateur = new Guna.UI.WinForms.GunaLabel();
+            this.PanelPriseDeService = new System.Windows.Forms.Panel();
+            this.TabPriseDeSerivce = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.gunaPanel1.SuspendLayout();
             this.siticoneGroupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -67,6 +70,8 @@ namespace SecurityManager
             this.PanelMainCourante.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.PanelPriseDeService.SuspendLayout();
+            this.TabPriseDeSerivce.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaPanel1
@@ -139,8 +144,8 @@ namespace SecurityManager
             this.siticoneGroupBox1.Controls.Add(this.gunaButton2);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton6);
             this.siticoneGroupBox1.Controls.Add(this.BtnMainCourante);
-            this.siticoneGroupBox1.Controls.Add(this.gunaButton5);
-            this.siticoneGroupBox1.Controls.Add(this.gunaButton1);
+            this.siticoneGroupBox1.Controls.Add(this.BtnAide);
+            this.siticoneGroupBox1.Controls.Add(this.BtnPriseDeService);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton3);
             this.siticoneGroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.siticoneGroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -270,51 +275,53 @@ namespace SecurityManager
             this.BtnMainCourante.Text = "Main courante";
             this.BtnMainCourante.Click += new System.EventHandler(this.BtnMainCourante_Click);
             // 
-            // gunaButton5
+            // BtnAide
             // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = global::SecurityManager.Properties.Resources.Info_v2_28px;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(0, 317);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Size = new System.Drawing.Size(229, 40);
-            this.gunaButton5.TabIndex = 24;
-            this.gunaButton5.Text = "Aide";
+            this.BtnAide.AnimationHoverSpeed = 0.07F;
+            this.BtnAide.AnimationSpeed = 0.03F;
+            this.BtnAide.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnAide.BorderColor = System.Drawing.Color.Black;
+            this.BtnAide.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAide.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAide.ForeColor = System.Drawing.Color.White;
+            this.BtnAide.Image = global::SecurityManager.Properties.Resources.Info_v2_28px;
+            this.BtnAide.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAide.Location = new System.Drawing.Point(0, 317);
+            this.BtnAide.Name = "BtnAide";
+            this.BtnAide.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnAide.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAide.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAide.OnHoverImage = null;
+            this.BtnAide.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAide.Size = new System.Drawing.Size(229, 40);
+            this.BtnAide.TabIndex = 24;
+            this.BtnAide.Text = "Aide";
+            this.BtnAide.Click += new System.EventHandler(this.BtnAide_Click_1);
             // 
-            // gunaButton1
+            // BtnPriseDeService
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = global::SecurityManager.Properties.Resources.Prise_Service_28px;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(0, 126);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(229, 40);
-            this.gunaButton1.TabIndex = 20;
-            this.gunaButton1.Text = "Prise de service";
+            this.BtnPriseDeService.AnimationHoverSpeed = 0.07F;
+            this.BtnPriseDeService.AnimationSpeed = 0.03F;
+            this.BtnPriseDeService.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnPriseDeService.BorderColor = System.Drawing.Color.Black;
+            this.BtnPriseDeService.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnPriseDeService.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnPriseDeService.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnPriseDeService.ForeColor = System.Drawing.Color.White;
+            this.BtnPriseDeService.Image = global::SecurityManager.Properties.Resources.Prise_Service_28px;
+            this.BtnPriseDeService.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnPriseDeService.Location = new System.Drawing.Point(0, 126);
+            this.BtnPriseDeService.Name = "BtnPriseDeService";
+            this.BtnPriseDeService.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnPriseDeService.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnPriseDeService.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnPriseDeService.OnHoverImage = null;
+            this.BtnPriseDeService.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnPriseDeService.Size = new System.Drawing.Size(229, 40);
+            this.BtnPriseDeService.TabIndex = 20;
+            this.BtnPriseDeService.Text = "Prise de service";
+            this.BtnPriseDeService.Click += new System.EventHandler(this.BtnPriseDeService_Click);
             // 
             // gunaButton3
             // 
@@ -441,7 +448,7 @@ namespace SecurityManager
             this.PanelMainCourante.Controls.Add(this.BtnAjoutEvenement);
             this.PanelMainCourante.Controls.Add(this.TxtMainCouranteAjout);
             this.PanelMainCourante.Controls.Add(this.tabControl2);
-            this.PanelMainCourante.Location = new System.Drawing.Point(237, 99);
+            this.PanelMainCourante.Location = new System.Drawing.Point(237, 96);
             this.PanelMainCourante.Name = "PanelMainCourante";
             this.PanelMainCourante.Size = new System.Drawing.Size(551, 352);
             this.PanelMainCourante.TabIndex = 30;
@@ -546,11 +553,41 @@ namespace SecurityManager
             this.LblUtilisateur.TabIndex = 31;
             this.LblUtilisateur.Text = "BERESLOW ARTHUR";
             // 
+            // PanelPriseDeService
+            // 
+            this.PanelPriseDeService.Controls.Add(this.TabPriseDeSerivce);
+            this.PanelPriseDeService.Location = new System.Drawing.Point(237, 96);
+            this.PanelPriseDeService.Name = "PanelPriseDeService";
+            this.PanelPriseDeService.Size = new System.Drawing.Size(551, 352);
+            this.PanelPriseDeService.TabIndex = 32;
+            this.PanelPriseDeService.Visible = false;
+            // 
+            // TabPriseDeSerivce
+            // 
+            this.TabPriseDeSerivce.Controls.Add(this.tabPage3);
+            this.TabPriseDeSerivce.Location = new System.Drawing.Point(6, 1);
+            this.TabPriseDeSerivce.Name = "TabPriseDeSerivce";
+            this.TabPriseDeSerivce.SelectedIndex = 0;
+            this.TabPriseDeSerivce.Size = new System.Drawing.Size(539, 338);
+            this.TabPriseDeSerivce.TabIndex = 37;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(531, 312);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Prise de service";
+            this.tabPage3.ToolTipText = "Consignes particulières, permanantes ou temporaires.";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // FrmUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PanelPriseDeService);
             this.Controls.Add(this.PanelMainCourante);
             this.Controls.Add(this.siticoneGroupBox1);
             this.Controls.Add(this.BtnDeconnexion);
@@ -573,6 +610,8 @@ namespace SecurityManager
             this.tabControl2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.PanelPriseDeService.ResumeLayout(false);
+            this.TabPriseDeSerivce.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -586,11 +625,11 @@ namespace SecurityManager
         private Siticone.UI.WinForms.SiticoneControlBox BtnClose;
         private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
         private Guna.UI.WinForms.GunaButton BtnMainCourante;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton BtnPriseDeService;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton BtnDeconnexion;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
+        private Guna.UI.WinForms.GunaButton BtnAide;
         private Guna.UI.WinForms.GunaButton gunaButton6;
         private Siticone.UI.WinForms.SiticoneGroupBox siticoneGroupBox1;
         private System.Windows.Forms.TabControl tabControl1;
@@ -608,5 +647,8 @@ namespace SecurityManager
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox TxtMainCourante;
         private Guna.UI.WinForms.GunaLabel LblUtilisateur;
+        private System.Windows.Forms.Panel PanelPriseDeService;
+        private System.Windows.Forms.TabControl TabPriseDeSerivce;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }

@@ -16,7 +16,7 @@ namespace SecurityManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmSetup());
+            Application.Run(new FrmUtilisateur());
         }
     }
 }

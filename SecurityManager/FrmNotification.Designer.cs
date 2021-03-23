@@ -98,7 +98,11 @@ namespace SecurityManager
             this.Controls.Add(this.GunaPictureBox2);
             this.Controls.Add(this.GunaPictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmNotification";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "FrmNotification";
             ((System.ComponentModel.ISupportInitialize)(this.GunaPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GunaPictureBox1)).EndInit();
