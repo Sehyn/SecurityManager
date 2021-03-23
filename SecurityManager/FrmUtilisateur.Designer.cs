@@ -120,6 +120,7 @@ namespace SecurityManager
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
             this.BtnClose.Size = new System.Drawing.Size(45, 29);
             this.BtnClose.TabIndex = 3;
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // gunaSeparator1
             // 
@@ -422,9 +423,9 @@ namespace SecurityManager
             // 
             // Animation
             // 
-            this.Animation.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_CENTER;
-            this.Animation.Interval = 100;
-            this.Animation.TargetControl = null;
+            this.Animation.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_BLEND;
+            this.Animation.Interval = 800;
+            this.Animation.TargetControl = this;
             // 
             // PanelConsignes
             // 
@@ -561,6 +562,7 @@ namespace SecurityManager
             this.Name = "FrmUtilisateur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUtilisateur";
+            this.Load += new System.EventHandler(this.FrmUtilisateur_Load_1);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             this.siticoneGroupBox1.ResumeLayout(false);

@@ -162,5 +162,15 @@ namespace SecurityManager
             }
 
         }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FrmUtilisateur_Load_1(object sender, EventArgs e)
+        {
+            Animation.Start();
+        }
     }
 }

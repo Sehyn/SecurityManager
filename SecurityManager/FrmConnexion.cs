@@ -42,5 +42,10 @@ namespace SecurityManager
             FormUtilisateur.Show();
 #endif
         }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
