@@ -42,7 +42,7 @@ namespace SecurityManager
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.BtnMainCourante = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
+            this.BtnAide = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -139,7 +139,7 @@ namespace SecurityManager
             this.siticoneGroupBox1.Controls.Add(this.gunaButton2);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton6);
             this.siticoneGroupBox1.Controls.Add(this.BtnMainCourante);
-            this.siticoneGroupBox1.Controls.Add(this.gunaButton5);
+            this.siticoneGroupBox1.Controls.Add(this.BtnAide);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton1);
             this.siticoneGroupBox1.Controls.Add(this.gunaButton3);
             this.siticoneGroupBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -270,28 +270,29 @@ namespace SecurityManager
             this.BtnMainCourante.Text = "Main courante";
             this.BtnMainCourante.Click += new System.EventHandler(this.BtnMainCourante_Click);
             // 
-            // gunaButton5
+            // BtnAide
             // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = global::SecurityManager.Properties.Resources.Info_v2_28px;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(0, 317);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Size = new System.Drawing.Size(229, 40);
-            this.gunaButton5.TabIndex = 24;
-            this.gunaButton5.Text = "Aide";
+            this.BtnAide.AnimationHoverSpeed = 0.07F;
+            this.BtnAide.AnimationSpeed = 0.03F;
+            this.BtnAide.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.BtnAide.BorderColor = System.Drawing.Color.Black;
+            this.BtnAide.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.BtnAide.FocusedColor = System.Drawing.Color.Empty;
+            this.BtnAide.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnAide.ForeColor = System.Drawing.Color.White;
+            this.BtnAide.Image = global::SecurityManager.Properties.Resources.Info_v2_28px;
+            this.BtnAide.ImageSize = new System.Drawing.Size(20, 20);
+            this.BtnAide.Location = new System.Drawing.Point(0, 317);
+            this.BtnAide.Name = "BtnAide";
+            this.BtnAide.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.BtnAide.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.BtnAide.OnHoverForeColor = System.Drawing.Color.White;
+            this.BtnAide.OnHoverImage = null;
+            this.BtnAide.OnPressedColor = System.Drawing.Color.Black;
+            this.BtnAide.Size = new System.Drawing.Size(229, 40);
+            this.BtnAide.TabIndex = 24;
+            this.BtnAide.Text = "Aide";
+            this.BtnAide.Click += new System.EventHandler(this.BtnAide_Click_1);
             // 
             // gunaButton1
             // 
@@ -590,7 +591,7 @@ namespace SecurityManager
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton BtnDeconnexion;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
+        private Guna.UI.WinForms.GunaButton BtnAide;
         private Guna.UI.WinForms.GunaButton gunaButton6;
         private Siticone.UI.WinForms.SiticoneGroupBox siticoneGroupBox1;
         private System.Windows.Forms.TabControl tabControl1;

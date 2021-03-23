@@ -85,16 +85,7 @@ namespace SecurityManager
 
         }
 
-        private void FrmUtilisateur_Load(object sender, EventArgs e)
-        {
-            Animation.Start();
-        }
-
-        private void BtnAide_Click(object sender, EventArgs e)
-        {
-            FrmAide FormAide = new FrmAide();
-            FormAide.Show();
-        }
+     
 
         private void BtnMainCourante_Click(object sender, EventArgs e)
         {
@@ -171,6 +162,12 @@ namespace SecurityManager
         private void FrmUtilisateur_Load_1(object sender, EventArgs e)
         {
             Animation.Start();
+        }
+
+        private void BtnAide_Click_1(object sender, EventArgs e)
+        {
+            FrmAide FormAide = new FrmAide();
+            FormAide.Show();
         }
     }
 }
