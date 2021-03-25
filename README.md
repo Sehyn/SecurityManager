@@ -6,6 +6,7 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 
 ## A faire :
 
+- [ ] Pouvoir modifier les consignes via une page web pour le client (api?) @EvannG1 ?
 - [ ] Animation quand on ferme une form
 - [ ] Système mise à jour
 - [ ] Logger les les prises de service avec tableau via SQL
