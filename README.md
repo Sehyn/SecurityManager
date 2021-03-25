@@ -8,13 +8,12 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 
 - [ ] Animation quand on ferme une form
 - [ ] Système mise à jour
-- [ ] Syutème de connexion (Auth.GG) - !!TEMPORAIRE POUR TEST!!
+
 - [ ] Rénitialisation logiciel
 - [ ] Utilisation de #region pour meilleur lecture et organisation
 - [ ] Optimiser le code notamment l'utilisation de fonctions asynchromes ! (await/task.delay) * J'ai fait n'importe quoi !
 - [ ] Créer un répertoire d'agent en listview ? (ou il est possible d'y ajouter des informations selon le niveau d'accès)
 - [ ] Rendre le répertoire d'agent modifiable selon le niveau de l'utilisateur connecté
-- [ ] Régler le problème pour la FrmNotification apparait dans la taskbar.
 - [ ] Faire en sorte que quand on utilise l'Hotkey (CTRL + F3) au setup/start up du programme ça arrete l'opération en cours
 - [ ] Pouvoir envoyer des rapports directement par mail
 - [ ] Pouvoir utiliser autre chose que des .txt pour la main courante, etc.. (Idée PDF + design mais aucune idée de comment faire!)
@@ -34,7 +33,8 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 - [x] Utiliser les commentaires pragma pour les placeholders
 - [x] Ecrire dans la main courante et l'ouvrir sur une textbox
 - [x] Ne pas créer pleins de formes utiliser un tab/panel ou meme form en utilisant visible = false/true 
-
+- [x] Syutème de connexion (Utilisation d'une DB via MySQL Studio) (LOCAL)
+- [x] Régler le problème pour la FrmNotification apparait dans la taskbar.
 
 ## Developpé par :
 * Sehyn
