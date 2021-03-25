@@ -8,7 +8,7 @@ Le programme stock les données 100% Localement ce qui est très risqué dans le
 
 - [ ] Animation quand on ferme une form
 - [ ] Système mise à jour
-
+- [ ] Logger les les prises de service avec tableau via SQL
 - [ ] Rénitialisation logiciel
 - [ ] Utilisation de #region pour meilleur lecture et organisation
 - [ ] Optimiser le code notamment l'utilisation de fonctions asynchromes ! (await/task.delay) * J'ai fait n'importe quoi !
