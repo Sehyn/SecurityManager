@@ -1,8 +1,11 @@
+PROJET A L'ABANDON A CAUSE DE @https://github.com/EvannG1?tab=repositories [Pas le temps pour ton api de merde 3500€ pour le faire]
+
+
+
 ## # SecurityManager
 Security Manager est un programme développé pour effectuer certaines manipulations dans le cadre du service d'agent de sécurité. Etant mon emploi à temps plein (SSIAP 1) et ayant pu voir diverses main courantes électroniques ainsi que les services de pointages, plannings, evénements et autres. J'ai décidé de développer ma propre application dans le but de la commercialiser dans le futur éventuellement mais SURTOUT pour en apprendre plus sur le C#.
 Le programme stock les données 100% Localement ce qui est très risqué dans le domaine de la sécurité, mais les héberger en ligne églamment est une faille de sécurité a voir..
 
-PROJET A L'ABANDON A CAUSE DE @https://github.com/EvannG1?tab=repositories [Pas le temps pour ton api de merde 3500€ pour le faire]
 
 **Plusieurs fonctionalités seront ajoutées au fil du temps.**
 
