@@ -1,4 +1,4 @@
-PROJET A L'ABANDON A CAUSE DE @https://github.com/EvannG1?tab=repositories [Pas le temps pour ton api de merde 3500€ pour le faire]
+
 
 
 
